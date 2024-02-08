@@ -1,0 +1,359 @@
+#top{
+    background-color: white;
+}
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.border-redondo{
+    border-radius: 15px;
+    border:2px solid grey; 
+}
+
+.img-small{
+    width: 150px;
+}
+
+h1{
+   color:grey;
+}
+
+.principal{
+    color: grey;
+}
+
+div{
+    color:aqua;
+}
+
+nav{
+    text-align: right;
+}
+
+a{
+    color: beige;
+}
+
+nav.navegacion{
+    position: sticky;
+    top:0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    /*display: inline;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    justify-content: space-between;
+}
+
+.navegacion .logo__container{
+    background-color: aqua;
+    /*margin-top: 8px;*/
+    width: 100%;
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: center ;*/
+    justify-content: space-around;
+}
+
+.logo__container .logo{
+    width: 100px;
+    }
+
+
+.navegacion__nav{
+    width: 80%;
+    /*height: 40px;*/
+   background-color: aquamarine;
+    /*display: inline-block; */
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegacion__nav .nav__item{
+    /*display: inline-block;*/
+    /*margin-left: 10px;*/
+    background-color: grey;
+    padding: 10px;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 90px;
+    height: 90px;
+    background-color: beige;
+    text-align: center;
+    color:white;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin: 10px 20px 40px 50px;
+    border: 4px solid white;
+    border-bottom: 10px solid white;
+    padding: 10px;
+    display: inline-block;
+    /*display: block;*/
+    /*box-sizing: border-box;*/
+    /*border-radius: 10px; */
+}
+
+.box2 {
+    background-color: blanchedalmond;
+    /*position: relative;*/
+    /*position: fixed;*/
+    bottom: 0px;
+    right: 30px;
+    /*top: 20px;*/
+    position: relative;
+}
+
+.box3{
+    background-color: burlywood;
+    /*position: absolute;*/
+    bottom: 0px;
+    right: 50px;
+    position: relative;
+}
+
+.box4{
+    background-color: rgb(211, 163, 74);
+    bottom: 18px;
+    right: 70px;
+    position: relative;
+}
+
+.text-content{
+    background-color: beige;
+    width: 50%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.content-main{
+    margin-top: 50px;
+}
+
+.header__container, .content__main{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    /*display: flex;*/
+}
+
+.header__container video{
+    position: absolute;
+    height: 100%;
+    width: 100;
+    object-fit: cover;
+}
+
+/*.form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_container form{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+form .form__control{
+width: 100%;
+padding: 7px 0;
+
+}
+
+.form__control.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.form__control input, select{
+    height: 30px;
+}*/
+
+.form_container, .container__titles{
+    position: absolute;
+    background-color: aqua;
+    top: 10%;
+    left: 5%;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container__titles{
+    background-color:rgba(255, 255, 255, 0.336);
+    left: 50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contenedor-padre{
+    height: 550px;
+    background-color: aqua;
+    display: flex;
+    /*flex-direction: column;*/
+   /* flex-direction: row;*/
+    flex-wrap: wrap;
+    align-items: center;
+    /*align-items: end;*/
+    /*align-items: start;*/
+    /*align-content: center;*/
+    gap: 16px;
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
+}
+
+.contenedor-hijo{
+    font-weight: 600;
+    height: 100px;
+    width: 250px;
+    background-color: white;
+   /* margin: 10px;*/ 
+    border: 1px solid;
+    border-radius: 5px;
+    order: 0;
+}
+
+.h-2{
+    background-color: black;
+    order: 1;
+}
+
+.h-5{
+    background-color: blueviolet;
+    order: -1;
+
+}
+
+.h-8{
+    background-color: blue ;
+    order: -1;
+
+}
+
+
+
+
+/*.header__container .capa{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}*/
+/*
+
+
+#top{
+    background-color:aqua;
+    width: 100%;
+    
+}
+
+.borde-redondo{
+    border-radius: 0px;
+}
+
+.img-small{
+    width: 300px;
+    border-radius: 30px;  
+}
+
+.video-small{
+    width: 300px;
+    height: 300px;
+    
+}
+
+h1{
+    color: white;
+    font-size: 15px
+}
+
+h2{
+    color: white;
+    font-size: 10px;
+}
+
+p{
+    color:grey;
+}
+
+.destacado{
+    background-color: aqua;
+    font-weight: rem;
+}
+
+.texto-encuadrado{
+    background-color:aqua;
+    width: 15%;
+    height: 50%;
+}
+
+a{
+    color:cadetblue;
+}
+
+a.activo{
+    color: cadetblue;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+nav.navegacion{
+    width: 300%;
+    height: 300px;
+    }
+
+.logo{
+    width: 100px;
+    height: 100px;
+    }
+
+nav{
+    background-color: aqua;
+    text-align:right;
+    width: 500px;
+    height: 20px;
+    }
+
+header{
+    width: 10%;
+    height: 10%;
+    background-image: url(../img/nombres-para-una-heladeria.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+*/
